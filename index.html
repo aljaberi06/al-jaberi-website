@@ -63,6 +63,11 @@ footer a{color:#E0C48A}
 footer p{margin:6px 0}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .cover.pic{position:relative}.no{position:absolute;top:8px;left:8px;z-index:1;background:var(--river);color:#fff;font:600 15px/1 "Hind Siliguri",sans-serif;padding:6px 10px;border-radius:999px}.book:nth-child(3n+2) .no{background:var(--accent);color:#241000}.book:nth-child(3n) .no{background:var(--red)}</style>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b4a30">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
 </head>
 <body>
 <nav><div class="wrap">
@@ -126,5 +131,12 @@ footer p{margin:6px 0}
 <p>বই কিনুন: <a href="https://www.rokomari.com/book/author/32440/al-jabiri" target="_blank" rel="noopener">রকমারিতে আল জাবিরীর বই</a></p><p>ফেসবুক: <a href="https://www.facebook.com/aljaberi.bd">facebook.com/aljaberi.bd</a></p><p>হোয়াটসঅ্যাপ: <a href="https://wa.me/8801771474393">০১৭৭১৪৭৪৩৯৩</a></p><p>মোবাইল: <a href="tel:+8801321668811">০১৩২১৬৬৮৮১১</a></p><p>ইমেইল: <a href="mailto:aljaberi06@gmail.com">aljaberi06@gmail.com</a></p>
 <p style="opacity:.7;margin-top:28px;font-size:15px">© ২০২৬ আল জাবিরী</p>
 </div></footer>
+<script>
+if("serviceWorker" in navigator){
+  window.addEventListener("load",function(){
+    navigator.serviceWorker.register("sw.js").catch(function(){});
+  });
+}
+</script>
 </body>
 </html>
